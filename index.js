@@ -7,7 +7,9 @@ const app = express()
 // accepting request from spesific url
 const cors = require('cors');
 app.use(cors({
-   origin: 'http://localhost:3000' 
+   origin: ['http://localhost:3000',
+   'https://snowy-dust-3589.fly.dev/'
+   ] 
   }));
 
 fullstack_open_osa_3
